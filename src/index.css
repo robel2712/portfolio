@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+/* Dark mode override */
+html.dark {
+  color-scheme: dark;
+}
+
+/* Manual dark mode styles for key components */
+html.dark body {
+  background-color: rgb(15 23 41) !important;
+  color: rgb(248 250 252) !important;
+}
+
+/* Override main container */
+html.dark .bg-slate-50 {
+  background-color: rgb(15 23 41) !important;
+}
+
+html.dark .dark\:bg-slate-900 {
+  background-color: rgb(15 23 41) !important;
+}
+
+/* Text colors */
+html.dark .text-slate-900 {
+  color: rgb(248 250 252) !important;
+}
+
+html.dark .dark\:text-slate-50 {
+  color: rgb(248 250 252) !important;
+}
+
+html.dark .dark\:text-white {
+  color: rgb(255 255 255) !important;
+}
+
+/* Backgrounds */
+html.dark .dark\:bg-slate-800 {
+  background-color: rgb(30 41 59) !important;
+}
+
+html.dark .dark\:bg-slate-950 {
+  background-color: rgb(2 6 23) !important;
+}
+
+html.dark .dark\:bg-white {
+  background-color: rgb(15 23 41) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+:root.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+
+:root.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+/* Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(203, 213, 225, 0.4);
+}
+
+:root.dark .glass-panel {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+/* Comprehensive dark mode styles */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark,
+html.dark body {
+  background-color: rgb(15 23 41) !important;
+  color: rgb(248 250 252) !important;
+}
+
+/* Background colors */
+html.dark .dark\:bg-slate-900 { background-color: rgb(15 23 41) !important; }
+html.dark .dark\:bg-slate-950 { background-color: rgb(2 6 23) !important; }
+html.dark .dark\:bg-slate-800 { background-color: rgb(30 41 59) !important; }
+html.dark .dark\:bg-slate-700 { background-color: rgb(51 65 85) !important; }
+html.dark .dark\:bg-gray-800 { background-color: rgb(31 41 55) !important; }
+html.dark .dark\:bg-gray-700 { background-color: rgb(55 65 81) !important; }
+
+/* Text colors */
+html.dark .dark\:text-white { color: rgb(255 255 255) !important; }
+html.dark .dark\:text-slate-50 { color: rgb(248 250 252) !important; }
+html.dark .dark\:text-slate-200 { color: rgb(226 232 240) !important; }
+html.dark .dark\:text-slate-300 { color: rgb(203 213 225) !important; }
+html.dark .dark\:text-slate-400 { color: rgb(148 163 184) !important; }
+html.dark .dark\:text-sky-400 { color: rgb(56 189 248) !important; }
+html.dark .dark\:text-slate-600 { color: rgb(71 85 105) !important; }
+
+/* Border colors */
+html.dark .dark\:border-slate-700 { border-color: rgb(51 65 85) !important; }
+html.dark .dark\:border-slate-800 { border-color: rgb(30 41 59) !important; }
+html.dark .dark\:border-slate-900 { border-color: rgb(15 23 41) !important; }
+
+/* Hover states */
+html.dark .dark\:hover\:bg-slate-800:hover { background-color: rgb(30 41 59) !important; }
+html.dark .dark\:hover\:bg-slate-700:hover { background-color: rgb(51 65 85) !important; }
+html.dark .dark\:hover\:text-white:hover { color: rgb(255 255 255) !important; }
+html.dark .dark\:hover\:bg-gray-700:hover { background-color: rgb(55 65 81) !important; }
+html.dark .dark\:hover\:bg-gray-200:hover { background-color: rgb(229 231 235) !important; }
+
+/* Glass panel */
+html.dark .glass-panel {
+  background: rgba(30, 41, 59, 0.7) !important;
+  border: 1px solid rgba(148, 163, 184, 0.1) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+:root.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  /* Slate 300 */
+  border-radius: 5px;
+}
+
+:root.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  /* Slate 800 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+  /* Sky 500 */
+}
+
+/* Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(203, 213, 225, 0.4);
+}
+
+:root.dark .glass-panel {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
