@@ -12,7 +12,7 @@ const Skills = () => {
                 {/* Tech Stack Icons Slider */}
                 <div className="mb-20">
                     <div className="text-center mb-8">
-                        <span className="text-xs font-bold tracking-widest text-slate-500 uppercase">Familarized Tech Stack</span>
+                        <span className="text-xs font-bold tracking-widest text-slate-500 uppercase">Familiar with</span>
                     </div>
                     <TechStackSlider techStackIcons={techStackIcons} />
                 </div>

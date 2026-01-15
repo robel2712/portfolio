@@ -6,7 +6,7 @@ const TechStackSlider = ({ techStackIcons }) => {
 
   return (
     <div className="relative w-full overflow-hidden py-8">
-      <style jsx>{`
+      <style>{`
         @keyframes slide-left {
           0% {
             transform: translateX(0);
