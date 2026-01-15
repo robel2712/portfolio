@@ -34,7 +34,7 @@ function App() {
       <Footer />
     </div>
     <SpeedInsights/>
-    <Analytics/>
+    <Analytics/> 
     </ThemeProvider>
   );
 }
